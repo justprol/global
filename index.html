@@ -769,6 +769,7 @@ details.memo[open] summary::before{transform:rotate(45deg)}
 
 /* 모바일 */
 @media (max-width:820px){
+  .split{grid-template-columns:minmax(0,1fr)}
   .wrap{padding-top:16px;gap:14px}
   .card{padding:20px 18px}
   .nart{padding:24px 20px 28px}
@@ -789,7 +790,8 @@ details.memo[open] summary::before{transform:rotate(45deg)}
   .mast nav.tabs.main [role=tab]::after{left:12px;right:12px}
   .toolbar input,.toolbar select,.wbtn,.seg{height:42px}
   .toolbar input{flex-basis:100%}
-  .toolbar select{flex:1 1 0}
+  .toolbar select{flex:1 1 140px}
+  .wbtn{flex:1 1 auto}
 }
 @media (prefers-reduced-motion:reduce){button:active{transform:none}}
 </style>
